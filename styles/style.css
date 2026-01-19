@@ -1,1 +1,369 @@
-/* место для вашего кода */
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.5px;
+  text-underline-offset: 3px;
+}
+
+.address a {
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  width: 1100px;
+  height: 293px;
+  padding: 90px 50px 96px 48px;
+}
+
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  text-decoration: none;
+  text-decoration-thickness: 0.1px;
+  text-underline-offset: 4px;
+  list-style-type: circle;
+}
+
+.header__links-list-item {
+  padding-left: 1.3px;
+  word-spacing: 1px;
+}
+
+.header__link {
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 0.8px;
+  text-underline-offset: 3.5px;
+}
+
+.header__view {
+  margin-left: 1px;
+}
+
+.header__about-auction {
+  margin-left: 3px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  width: 137px;
+  height: 105px;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.header__address {
+  justify-self: end;
+  align-items: flex-start;
+  max-width: 240px;
+  margin-top: 2px;
+}
+
+.cover {
+  position: relative;
+  width: 1100px;
+  min-height: 757px;
+  padding: 156px 50px 50px;
+}
+
+.cover__image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 51% center;
+}
+
+.cover__title {
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 135px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  word-spacing: 100px;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  padding-left: 28px;
+  text-align: center;
+}
+
+.aligned-text_right {
+  margin-right: -30px;
+  text-align: end;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__description {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between ;
+  margin-top: 95px;
+  color: #FFFFFF;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.cover__description-text {
+  margin-top: 14px;
+  word-spacing: 18.5px;
+}
+
+.bet-button {
+  all: unset;
+  border: 1px solid white;
+  padding: 12px 32px 11px 31px;
+  background-color: transparent;
+}
+
+.lots {
+  width: 1100px;
+  height: 723px;
+  margin-top: 180px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.lots__heading {
+  margin-bottom: 27px;
+  margin-left: 40px;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  position: relative;
+  width: 334px;
+  min-height: 596px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-link,
+.card {
+  height: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 48px 40px ;
+}
+
+.card__title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 118%;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.card__alignment-left-card {
+  word-spacing: -0.8px;
+}
+
+.card__alignment-right-card {
+  margin-left: -2px;
+}
+
+.lots__card-list-item-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 120%;
+  left: -35px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lots__card-list-item-image-left {
+  transform: scaleX(0.97);
+}
+
+.lots__card-list-item-image-center {
+  transform: scaleX(0.94);
+}
+
+.lots__look-more-link {
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.lots__look-more-link p {
+  margin-top: 30px;
+  margin-left: 40px;
+  text-decoration: underline;
+  text-decoration-thickness: 0.8px;
+  text-underline-offset: 5px;
+}
+
+.about {
+  width: 1100px;
+  height: 595px;
+  margin: 120px 24px 180px;
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  justify-content: space-between;
+}
+
+.about__logo {
+  position: relative;
+  margin: 35px 47px 320px;
+}
+
+.circle {
+  position: absolute;
+  z-index: -1;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: black;
+}
+
+.about__logo-image {
+  position: absolute;
+  top: 64px;
+  right: 46px;
+  width: 148px;
+  height: 114px;
+}
+
+.about__description {
+  margin: 136px 52px 0px 24px;
+}
+
+.about__title {
+  margin-bottom: 100px;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text-container {
+  display: flex;
+  flex-direction: column; 
+  gap: 24px;
+}
+
+.about__text {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 270px 1fr 240px;
+  width: 1100px;
+  height: 180px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.footer__menu {
+  justify-self: center;
+  margin-top: 1px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.footer__menu-list {
+  list-style: none;
+}
+
+.footer__menu-list-item {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.footer__menu-link {
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 0.8px;
+  text-underline-offset: 4px;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  margin-top: 1px;
+  list-style: none;
+}
